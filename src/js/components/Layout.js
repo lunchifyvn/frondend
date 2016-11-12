@@ -1,3 +1,17 @@
-/**
- * Created by Tuan on 11/12/2016.
- */
+import React, { Component, PropTypes } from "react";
+import Header from './Header';
+import Footer from './Footer';
+
+export default function(props) {
+
+    return (
+        <div>
+            <Header/>
+            <div className="container">{props.children}</div>
+            <Footer/>
+        </div>
+    )
+
+}
+
+

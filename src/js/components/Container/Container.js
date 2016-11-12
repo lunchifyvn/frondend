@@ -1,3 +1,7 @@
-/**
- * Created by Tuan on 11/12/2016.
- */
+import Home from './HomeContainer';
+import TopicList from './TopicListContainer'
+
+module.exports = {
+    Home: Home,
+    TopicList:TopicList
+}

@@ -1,3 +1,12 @@
+import store from '../store';
+import {getHomeTitle} from '../actions/HomeActions';
+
 /**
- * Created by Tuan on 11/12/2016.
+ * Get all users
  */
+export function getTopics() {
+    //  call ajax here
+    let response = "list topics";
+    store.dispatch(getTopicList(response));
+    return response;
+}

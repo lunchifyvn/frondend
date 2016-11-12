@@ -1,3 +1,10 @@
-/**
- * Created by Tuan on 11/12/2016.
- */
+import React from 'react';
+import {Provider} from 'react-redux';
+import store from './store';
+import router from './router';
+import {render} from 'react-dom';
+
+render(
+    <Provider store={store}>{router}</Provider>,
+    document.getElementById('root')
+);
