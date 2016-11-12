@@ -31,4 +31,14 @@
 <!-- Bootstrap Core JavaScript -->
 <script src="js/bootstrap.min.js"></script>
 
+<script>
+  $("[data-include]").each(function(index){
+    var path = $(this).data('include');
+    $(this).load(path, function(){
+      if (!$(".afterload").is(":visible")) {
+        $(".afterload").show();
+      }
+    })
+  })
+</script>
 </html>
